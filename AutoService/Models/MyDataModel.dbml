@@ -1,0 +1,158 @@
+﻿<?xml version="1.0" encoding="utf-8"?><Database Name="Auto_Service_DB" Class="MyDataModelDataContext" xmlns="http://schemas.microsoft.com/linqtosql/dbml/2007">
+  <Connection Mode="AppSettings" ConnectionString="Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=|DataDirectory|\Data\Auto_Service_DB.mdf;Integrated Security=True" SettingsObjectName="AutoService.Properties.Settings" SettingsPropertyName="Auto_Service_DBConnectionString5" Provider="System.Data.SqlClient" />
+  <Table Name="dbo.UserView" Member="UserView">
+    <Type Name="UserView">
+      <Column Name="Id" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="Login" Type="System.String" DbType="NVarChar(15) NOT NULL" CanBeNull="false" />
+      <Column Name="Password" Type="System.String" DbType="NVarChar(20) NOT NULL" CanBeNull="false" />
+      <Column Name="Users" Type="System.String" DbType="NVarChar(15) NOT NULL" CanBeNull="false" />
+    </Type>
+  </Table>
+  <Table Name="dbo.ModelCarView" Member="ModelCarView">
+    <Type Name="ModelCarView">
+      <Column Name="Id" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="Name" Type="System.String" DbType="NVarChar(30) NOT NULL" CanBeNull="false" />
+    </Type>
+  </Table>
+  <Table Name="dbo.ServicesView" Member="ServicesView">
+    <Type Name="ServicesView">
+      <Column Name="Id" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="Name" Type="System.String" DbType="NVarChar(50) NOT NULL" CanBeNull="false" />
+      <Column Name="Price" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="Details" Type="System.String" DbType="NVarChar(500) NOT NULL" CanBeNull="false" />
+    </Type>
+  </Table>
+  <Table Name="dbo.MasterView" Member="MasterView">
+    <Type Name="MasterView">
+      <Column Name="Id" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="Master" Type="System.String" DbType="NVarChar(152) NOT NULL" CanBeNull="false" />
+      <Column Name="Phone" Type="System.String" DbType="NVarChar(50) NOT NULL" CanBeNull="false" />
+      <Column Name="Birthday" Type="System.DateTime" DbType="Date NOT NULL" CanBeNull="false" />
+    </Type>
+  </Table>
+  <Table Name="dbo.MasterSeparatelyView" Member="MasterSeparatelyView">
+    <Type Name="MasterSeparatelyView">
+      <Column Name="Id" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="Surname" Type="System.String" DbType="NVarChar(50) NOT NULL" CanBeNull="false" />
+      <Column Name="Patronymic" Type="System.String" DbType="NVarChar(50) NOT NULL" CanBeNull="false" />
+      <Column Name="Name" Type="System.String" DbType="NVarChar(50) NOT NULL" CanBeNull="false" />
+      <Column Name="Phone" Type="System.String" DbType="NVarChar(50) NOT NULL" CanBeNull="false" />
+      <Column Name="Birthday" Type="System.DateTime" DbType="Date NOT NULL" CanBeNull="false" />
+    </Type>
+  </Table>
+  <Table Name="dbo.ClientView" Member="ClientView">
+    <Type Name="ClientView">
+      <Column Name="Id" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="SurName" Type="System.String" DbType="NVarChar(50) NOT NULL" CanBeNull="false" />
+      <Column Name="Name" Type="System.String" DbType="NVarChar(50) NOT NULL" CanBeNull="false" />
+      <Column Name="Patronymic" Type="System.String" DbType="NVarChar(50) NOT NULL" CanBeNull="false" />
+      <Column Name="Birthday" Type="System.DateTime" DbType="Date NOT NULL" CanBeNull="false" />
+      <Column Name="Phone" Type="System.String" DbType="NVarChar(50) NOT NULL" CanBeNull="false" />
+      <Column Name="ModelAuto" Type="System.String" DbType="NVarChar(30) NOT NULL" CanBeNull="false" />
+      <Column Name="AutoRegisterSign" Type="System.String" DbType="NVarChar(50) NOT NULL" CanBeNull="false" />
+    </Type>
+  </Table>
+  <Table Name="dbo.ClientJoinView" Member="ClientJoinView">
+    <Type Name="ClientJoinView">
+      <Column Name="Id" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="Client" Type="System.String" DbType="NVarChar(152) NOT NULL" CanBeNull="false" />
+      <Column Name="Birthday" Type="System.DateTime" DbType="Date NOT NULL" CanBeNull="false" />
+      <Column Name="Phone" Type="System.String" DbType="NVarChar(50) NOT NULL" CanBeNull="false" />
+      <Column Name="ModelAuto" Type="System.String" DbType="NVarChar(30) NOT NULL" CanBeNull="false" />
+      <Column Name="AutoRegisterSign" Type="System.String" DbType="NVarChar(50) NOT NULL" CanBeNull="false" />
+    </Type>
+  </Table>
+  <Table Name="dbo.ApplicationView" Member="ApplicationView">
+    <Type Name="ApplicationView">
+      <Column Name="Id" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="Client" Type="System.String" DbType="NVarChar(152) NOT NULL" CanBeNull="false" />
+      <Column Name="Car" Type="System.String" DbType="NVarChar(81) NOT NULL" CanBeNull="false" />
+      <Column Name="Birthday" Type="System.DateTime" DbType="Date NOT NULL" CanBeNull="false" />
+      <Column Name="Master" Type="System.String" DbType="NVarChar(152) NOT NULL" CanBeNull="false" />
+      <Column Name="DateVisit" Type="System.DateTime" DbType="Date NOT NULL" CanBeNull="false" />
+      <Column Name="DateReady" Type="System.DateTime" DbType="Date NOT NULL" CanBeNull="false" />
+      <Column Name="ServiceName" Type="System.String" DbType="NVarChar(50) NOT NULL" CanBeNull="false" />
+      <Column Name="Price" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="Done" Type="System.String" DbType="NVarChar(15) NOT NULL" CanBeNull="false" />
+    </Type>
+  </Table>
+  <Table Name="dbo.Users" Member="Users">
+    <Type Name="Users">
+      <Column Name="Id" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="Login" Type="System.String" DbType="NVarChar(15) NOT NULL" CanBeNull="false" />
+      <Column Name="Password" Type="System.String" DbType="NVarChar(20) NOT NULL" CanBeNull="false" />
+      <Column Name="StatusID" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Association Name="Status_Users" Member="Status" ThisKey="StatusID" OtherKey="Id" Type="Status" IsForeignKey="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.Status" Member="Status">
+    <Type Name="Status">
+      <Column Name="Id" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="Login" Type="System.String" DbType="NVarChar(15) NOT NULL" CanBeNull="false" />
+      <Association Name="Status_Users" Member="Users" ThisKey="Id" OtherKey="StatusID" Type="Users" />
+    </Type>
+  </Table>
+  <Table Name="dbo.Applications" Member="Applications">
+    <Type Name="Applications">
+      <Column Name="Id" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="ClientID" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="MasterID" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="ServiceID" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="DateVisit" Type="System.DateTime" DbType="Date NOT NULL" CanBeNull="false" />
+      <Column Name="Done" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="DateReady" Type="System.DateTime" DbType="Date NOT NULL" CanBeNull="false" />
+      <Association Name="Masters_Applications" Member="Masters" ThisKey="MasterID" OtherKey="Id" Type="Masters" IsForeignKey="true" />
+      <Association Name="Clients_Applications" Member="Clients" ThisKey="ClientID" OtherKey="Id" Type="Clients" IsForeignKey="true" />
+      <Association Name="Services_Applications" Member="Services" ThisKey="ServiceID" OtherKey="Id" Type="Services" IsForeignKey="true" />
+      <Association Name="StatusDone_Applications" Member="StatusDone" ThisKey="Done" OtherKey="Id" Type="StatusDone" IsForeignKey="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.Masters" Member="Masters">
+    <Type Name="Masters">
+      <Column Name="Id" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="Name" Type="System.String" DbType="NVarChar(50) NOT NULL" CanBeNull="false" />
+      <Column Name="Surname" Type="System.String" DbType="NVarChar(50) NOT NULL" CanBeNull="false" />
+      <Column Name="Patronymic" Type="System.String" DbType="NVarChar(50) NOT NULL" CanBeNull="false" />
+      <Column Name="Phone" Type="System.String" DbType="NVarChar(50) NOT NULL" CanBeNull="false" />
+      <Column Name="Birthday" Type="System.DateTime" DbType="Date NOT NULL" CanBeNull="false" />
+      <Association Name="Masters_Applications" Member="Applications" ThisKey="Id" OtherKey="MasterID" Type="Applications" />
+    </Type>
+  </Table>
+  <Table Name="dbo.Clients" Member="Clients">
+    <Type Name="Clients">
+      <Column Name="Id" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="ModelCarID" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="Name" Type="System.String" DbType="NVarChar(50) NOT NULL" CanBeNull="false" />
+      <Column Name="SurName" Type="System.String" DbType="NVarChar(50) NOT NULL" CanBeNull="false" />
+      <Column Name="Patronymic" Type="System.String" DbType="NVarChar(50) NOT NULL" CanBeNull="false" />
+      <Column Name="Phone" Type="System.String" DbType="NVarChar(50) NOT NULL" CanBeNull="false" />
+      <Column Name="Birthday" Type="System.DateTime" DbType="Date NOT NULL" CanBeNull="false" />
+      <Column Name="AutoRegisterSign" Type="System.String" DbType="NVarChar(50) NOT NULL" CanBeNull="false" />
+      <Association Name="Clients_Applications" Member="Applications" ThisKey="Id" OtherKey="ClientID" Type="Applications" />
+      <Association Name="ModelCars_Clients" Member="ModelCars" ThisKey="ModelCarID" OtherKey="Id" Type="ModelCars" IsForeignKey="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.ModelCars" Member="ModelCars">
+    <Type Name="ModelCars">
+      <Column Name="Id" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="Name" Type="System.String" DbType="NVarChar(30) NOT NULL" CanBeNull="false" />
+      <Association Name="ModelCars_Clients" Member="Clients" ThisKey="Id" OtherKey="ModelCarID" Type="Clients" />
+    </Type>
+  </Table>
+  <Table Name="dbo.Services" Member="Services">
+    <Type Name="Services">
+      <Column Name="Id" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="Name" Type="System.String" DbType="NVarChar(50) NOT NULL" CanBeNull="false" />
+      <Column Name="Price" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="Details" Type="System.String" DbType="NVarChar(500) NOT NULL" CanBeNull="false" />
+      <Association Name="Services_Applications" Member="Applications" ThisKey="Id" OtherKey="ServiceID" Type="Applications" />
+    </Type>
+  </Table>
+  <Table Name="dbo.StatusDone" Member="StatusDone">
+    <Type Name="StatusDone">
+      <Column Name="Id" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="DoneName" Type="System.String" DbType="NVarChar(15) NOT NULL" CanBeNull="false" />
+      <Association Name="StatusDone_Applications" Member="Applications" ThisKey="Id" OtherKey="Done" Type="Applications" />
+    </Type>
+  </Table>
+</Database>

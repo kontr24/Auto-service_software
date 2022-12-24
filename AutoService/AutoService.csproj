@@ -1,0 +1,372 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{0EFF1C73-A498-4FCE-A992-0DDDB72E525F}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>AutoService</RootNamespace>
+    <AssemblyName>AutoService</AssemblyName>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+    <IsWebBootstrapper>false</IsWebBootstrapper>
+    <PublishUrl>publish\</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Disk</InstallFrom>
+    <UpdateEnabled>false</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <ApplicationRevision>0</ApplicationRevision>
+    <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="FastReport, Version=2020.1.17.0, Culture=neutral, PublicKeyToken=db7e5ce63278458c" />
+    <Reference Include="FastReport.Bars, Version=2020.1.17.0, Culture=neutral, PublicKeyToken=db7e5ce63278458c" />
+    <Reference Include="FastReport.Editor, Version=2020.1.17.0, Culture=neutral, PublicKeyToken=db7e5ce63278458c" />
+    <Reference Include="System">
+      <HintPath>..\..\..\..\..\..\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.7.2\System.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data.Linq" />
+    <Reference Include="System.Security" />
+    <Reference Include="System.Windows.Forms.DataVisualization" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Class\GeneralClass.cs" />
+    <Compile Include="Forms\ApplicationsForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\ApplicationsForm.Designer.cs">
+      <DependentUpon>ApplicationsForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\ClientsForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\ClientsForm.Designer.cs">
+      <DependentUpon>ClientsForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\AuthorizationForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\AuthorizationForm.Designer.cs">
+      <DependentUpon>AuthorizationForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\MainForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\MainForm.Designer.cs">
+      <DependentUpon>MainForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\ModelAutoForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\ModelAutoForm.Designer.cs">
+      <DependentUpon>ModelAutoForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\MastersForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\MastersForm.Designer.cs">
+      <DependentUpon>MastersForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Models\MyDataModel.designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>MyDataModel.dbml</DependentUpon>
+    </Compile>
+    <Compile Include="MyUserControl\ApplicationsUserControl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="MyUserControl\ApplicationsUserControl.Designer.cs">
+      <DependentUpon>ApplicationsUserControl.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MyUserControl\ClientsUserControl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="MyUserControl\ClientsUserControl.Designer.cs">
+      <DependentUpon>ClientsUserControl.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MyUserControl\MainUserControl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="MyUserControl\MainUserControl.Designer.cs">
+      <DependentUpon>MainUserControl.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MyUserControl\MastersUserControl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="MyUserControl\MastersUserControl.Designer.cs">
+      <DependentUpon>MastersUserControl.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MyUserControl\ModelAutoControl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="MyUserControl\ModelAutoControl.Designer.cs">
+      <DependentUpon>ModelAutoControl.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MyUserControl\ServicesUserControl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="MyUserControl\ServicesUserControl.Designer.cs">
+      <DependentUpon>ServicesUserControl.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MyUserControl\UsersUserControl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="MyUserControl\UsersUserControl.Designer.cs">
+      <DependentUpon>UsersUserControl.cs</DependentUpon>
+    </Compile>
+    <Compile Include="OtherForms\PerformForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="OtherForms\PerformForm.Designer.cs">
+      <DependentUpon>PerformForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Class\Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="OtherForms\SettingsClient_Auto.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="OtherForms\SettingsClient_Auto.Designer.cs">
+      <DependentUpon>SettingsClient_Auto.cs</DependentUpon>
+    </Compile>
+    <Compile Include="OtherForms\SettingsModelAutoForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="OtherForms\SettingsModelAutoForm.Designer.cs">
+      <DependentUpon>SettingsModelAutoForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="OtherForms\SettingsMastersForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="OtherForms\SettingsMastersForm.Designer.cs">
+      <DependentUpon>SettingsMastersForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\ServicesForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\ServicesForm.Designer.cs">
+      <DependentUpon>ServicesForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="OtherForms\SettingsServicesForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="OtherForms\SettingsServicesForm.Designer.cs">
+      <DependentUpon>SettingsServicesForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="OtherForms\SettingsUpdateApplicationServiceForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="OtherForms\SettingsUpdateApplicationServiceForm.Designer.cs">
+      <DependentUpon>SettingsUpdateApplicationServiceForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\UsersForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\UsersForm.Designer.cs">
+      <DependentUpon>UsersForm.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="Forms\ApplicationsForm.resx">
+      <DependentUpon>ApplicationsForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\ClientsForm.resx">
+      <DependentUpon>ClientsForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\AuthorizationForm.resx">
+      <DependentUpon>AuthorizationForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\MainForm.resx">
+      <DependentUpon>MainForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\ModelAutoForm.resx">
+      <DependentUpon>ModelAutoForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\MastersForm.resx">
+      <DependentUpon>MastersForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MyUserControl\ApplicationsUserControl.resx">
+      <DependentUpon>ApplicationsUserControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MyUserControl\ClientsUserControl.resx">
+      <DependentUpon>ClientsUserControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MyUserControl\MainUserControl.resx">
+      <DependentUpon>MainUserControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MyUserControl\MastersUserControl.resx">
+      <DependentUpon>MastersUserControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MyUserControl\ModelAutoControl.resx">
+      <DependentUpon>ModelAutoControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MyUserControl\ServicesUserControl.resx">
+      <DependentUpon>ServicesUserControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MyUserControl\UsersUserControl.resx">
+      <DependentUpon>UsersUserControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="OtherForms\PerformForm.resx">
+      <DependentUpon>PerformForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <EmbeddedResource Include="OtherForms\SettingsClient_Auto.resx">
+      <DependentUpon>SettingsClient_Auto.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="OtherForms\SettingsModelAutoForm.resx">
+      <DependentUpon>SettingsModelAutoForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="OtherForms\SettingsMastersForm.resx">
+      <DependentUpon>SettingsMastersForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\ServicesForm.resx">
+      <DependentUpon>ServicesForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="OtherForms\SettingsServicesForm.resx">
+      <DependentUpon>SettingsServicesForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="OtherForms\SettingsUpdateApplicationServiceForm.resx">
+      <DependentUpon>SettingsUpdateApplicationServiceForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\UsersForm.resx">
+      <DependentUpon>UsersForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="Help\Help.chm" />
+    <None Include="Models\MyDataModel.dbml">
+      <Generator>MSLinqToSQLGenerator</Generator>
+      <LastGenOutput>MyDataModel.designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Models\MyDataModel.dbml.layout">
+      <DependentUpon>MyDataModel.dbml</DependentUpon>
+    </None>
+    <None Include="Properties\DataSources\AutoService.Applications.datasource" />
+    <None Include="Properties\DataSources\AutoService.ApplicationView.datasource" />
+    <None Include="Properties\DataSources\AutoService.CarsView.datasource" />
+    <None Include="Properties\DataSources\AutoService.ClientJoinView.datasource" />
+    <None Include="Properties\DataSources\AutoService.Masters.datasource" />
+    <None Include="Properties\DataSources\AutoService.MasterView.datasource" />
+    <None Include="Properties\DataSources\AutoService.ModelCarView.datasource" />
+    <None Include="Properties\DataSources\AutoService.Models.Users.datasource" />
+    <None Include="Properties\DataSources\AutoService.ServicesView.datasource" />
+    <None Include="Properties\DataSources\_Auto_service_DBDataSetMSSQL.datasource" />
+    <None Include="Properties\DataSources\AutoService.Models.ApplicationView.datasource" />
+    <None Include="Properties\DataSources\AutoService.Models.ClientJoinView.datasource" />
+    <None Include="Properties\DataSources\AutoService.Models.ClientView.datasource" />
+    <None Include="Properties\DataSources\AutoService.Models.MasterSeparatelyView.datasource" />
+    <None Include="Properties\DataSources\AutoService.Models.MasterView.datasource" />
+    <None Include="Properties\DataSources\AutoService.Models.ModelCars.datasource" />
+    <None Include="Properties\DataSources\AutoService.Models.ModelCarView.datasource" />
+    <None Include="Properties\DataSources\AutoService.Models.ServicesView.datasource" />
+    <None Include="Properties\DataSources\AutoService.Models.Status.datasource" />
+    <None Include="Properties\DataSources\AutoService.Models.UserView.datasource" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+    <None Include="Reports\ServiceReport.frx">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="Reports\ServiceReportAll.frx">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include=".NETFramework,Version=v4.7.2">
+      <Visible>False</Visible>
+      <ProductName>Microsoft .NET Framework 4.7.2 %28x86 и x64%29</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Data\Auto_Service_DB.mdf">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Data\Auto_Service_DB_log.ldf">
+      <DependentUpon>Auto_Service_DB.mdf</DependentUpon>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="images\Applications.png" />
+    <Content Include="images\CarDetails.ico" />
+    <Content Include="images\Clients.png" />
+    <Content Include="images\ClientsEdit.png" />
+    <Content Include="images\Delete.png" />
+    <Content Include="images\Exit.png" />
+    <Content Include="images\Report.png" />
+    <Content Include="images\Update.png" />
+    <Content Include="images\Users.png" />
+    <Content Include="images\UsersExit.png" />
+    <Content Include="images\Work.png" />
+    <None Include="images\Edit.png" />
+    <Content Include="images\lock.png" />
+    <Content Include="images\Masters.png" />
+    <Content Include="images\ModelAuto.png" />
+    <Content Include="images\Search.png" />
+    <Content Include="images\Services.png" />
+    <Content Include="images\user.png" />
+    <Content Include="images\UserAdd.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Service Include="{3259AA49-8AA1-44D3-9025-A0B520596A8C}" />
+  </ItemGroup>
+  <ItemGroup />
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
