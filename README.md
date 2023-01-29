@@ -8,7 +8,7 @@ https://cloud.mail.ru/public/wKGf/KoqsUb3aJ
 <hr/>
 <h2 align="center">Вход</h2>
 <p align="center">
-  <a href="https://github.com/kontr24/Auto-service_software"><img src="https://github.com/kontr24/Auto-service_software/blob/6779884d1f6f9f624e4c43baf348ac9dae9a00f3/ScreenshotsApplication/Entrance.png"></img></a>
+  <a href="https://raw.githubusercontent.com/kontr24/Auto-service_software/6779884d1f6f9f624e4c43baf348ac9dae9a00f3/ScreenshotsApplication/Entrance.png"><img src="https://github.com/kontr24/Auto-service_software/blob/6779884d1f6f9f624e4c43baf348ac9dae9a00f3/ScreenshotsApplication/Entrance.png"></img></a>
 </p>
 <hr/>
 <h2 align="center">Главная форма</h2>
