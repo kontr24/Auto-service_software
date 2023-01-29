@@ -18,7 +18,7 @@ https://cloud.mail.ru/public/wKGf/KoqsUb3aJ
 <hr/>
 <h2 align="center">Форма "Клиенты"</h2>
 <p align="center">
-  <a href="https://github.com/kontr24/Auto-service_software"><img src="https://github.com/kontr24/Auto-service_software/blob/485ebcccc0684153d82c466e9af3fa211125e4a0/ScreenshotsApplication/%D0%A1ustomersForm.png"></img></a>
+  <a href="https://raw.githubusercontent.com/kontr24/Auto-service_software/485ebcccc0684153d82c466e9af3fa211125e4a0/ScreenshotsApplication/СustomersForm.png"><img src="https://github.com/kontr24/Auto-service_software/blob/485ebcccc0684153d82c466e9af3fa211125e4a0/ScreenshotsApplication/%D0%A1ustomersForm.png"></img></a>
 </p>
 <hr/>
 <h2 align="center">Форма "Марки авто"</h2>
