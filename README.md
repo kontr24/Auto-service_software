@@ -23,5 +23,5 @@ https://cloud.mail.ru/public/wKGf/KoqsUb3aJ
 <hr/>
 <h2 align="center">Форма "Марки авто"</h2>
 <p align="center">
-  <a href="https://github.com/kontr24/Auto-service_software"><img src="https://github.com/kontr24/Auto-service_software/blob/e7d89945bdf6dc36a33be3443b79d72d427f244b/ScreenshotsApplication/CarBrandsForm.png"></img></a>
+  <a href="https://raw.githubusercontent.com/kontr24/Auto-service_software/e7d89945bdf6dc36a33be3443b79d72d427f244b/ScreenshotsApplication/CarBrandsForm.png"><img src="https://github.com/kontr24/Auto-service_software/blob/e7d89945bdf6dc36a33be3443b79d72d427f244b/ScreenshotsApplication/CarBrandsForm.png"></img></a>
 </p>
