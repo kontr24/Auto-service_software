@@ -38,6 +38,6 @@ https://cloud.mail.ru/public/wKGf/KoqsUb3aJ
 <hr/>
 <h2 align="center">Форма "Заявки"</h2>
 <p align="center">
-  <a href="https://raw.githubusercontent.com/kontr24/Auto-service_software/742b14f4508c7362e8dd0da6aeb258d5002f65a4/ScreenshotsApplication/ServicesForm.png"><img src="https://github.com/kontr24/Auto-service_software/blob/5c4e618279eae4ae990cc4c4bc5f68ecf12dff98/ScreenshotsApplication/ApplicationsForm.png"></img></a>
+  <a href="https://raw.githubusercontent.com/kontr24/Auto-service_software/5c4e618279eae4ae990cc4c4bc5f68ecf12dff98/ScreenshotsApplication/ApplicationsForm.png"><img src="https://github.com/kontr24/Auto-service_software/blob/5c4e618279eae4ae990cc4c4bc5f68ecf12dff98/ScreenshotsApplication/ApplicationsForm.png"></img></a>
 </p>
 
