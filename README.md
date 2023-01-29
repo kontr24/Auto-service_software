@@ -40,4 +40,9 @@ https://cloud.mail.ru/public/wKGf/KoqsUb3aJ
 <p align="center">
   <a href="https://raw.githubusercontent.com/kontr24/Auto-service_software/5c4e618279eae4ae990cc4c4bc5f68ecf12dff98/ScreenshotsApplication/ApplicationsForm.png"><img src="https://github.com/kontr24/Auto-service_software/blob/5c4e618279eae4ae990cc4c4bc5f68ecf12dff98/ScreenshotsApplication/ApplicationsForm.png"></img></a>
 </p>
+<hr/>
+<h2 align="center">Форма "Пользователи"</h2>
+<p align="center">
+  <a href="https://raw.githubusercontent.com/kontr24/Auto-service_software/5c4e618279eae4ae990cc4c4bc5f68ecf12dff98/ScreenshotsApplication/ApplicationsForm.png"><img src="https://github.com/kontr24/Auto-service_software/blob/9d2751ae05d6709e5ce3289f1068eee3df5eb444/ScreenshotsApplication/UsersForm.png"></img></a>
+</p>
 
