@@ -31,9 +31,9 @@ https://cloud.mail.ru/public/wKGf/KoqsUb3aJ
   <a href="https://raw.githubusercontent.com/kontr24/Auto-service_software/684263009d9e08b46aba0d2653594b2da7ab2dca/ScreenshotsApplication/MastersForm.png"><img src="https://github.com/kontr24/Auto-service_software/blob/684263009d9e08b46aba0d2653594b2da7ab2dca/ScreenshotsApplication/MastersForm.png"></img></a>
 </p>
 <hr/>
-<h2 align="center">Форма "Мастера"</h2>
+<h2 align="center">Форма "Услуги"</h2>
 <p align="center">
-  <a href="https://raw.githubusercontent.com/kontr24/Auto-service_software/684263009d9e08b46aba0d2653594b2da7ab2dca/ScreenshotsApplication/MastersForm.png"><img src="https://github.com/kontr24/Auto-service_software/blob/742b14f4508c7362e8dd0da6aeb258d5002f65a4/ScreenshotsApplication/ServicesForm.png"></img></a>
+  <a href="https://raw.githubusercontent.com/kontr24/Auto-service_software/742b14f4508c7362e8dd0da6aeb258d5002f65a4/ScreenshotsApplication/ServicesForm.png"><img src="https://github.com/kontr24/Auto-service_software/blob/742b14f4508c7362e8dd0da6aeb258d5002f65a4/ScreenshotsApplication/ServicesForm.png"></img></a>
 </p>
 
 
