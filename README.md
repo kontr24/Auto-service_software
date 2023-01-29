@@ -28,6 +28,6 @@ https://cloud.mail.ru/public/wKGf/KoqsUb3aJ
 <hr/>
 <h2 align="center">Форма "Мастера"</h2>
 <p align="center">
-  <a href="https://raw.githubusercontent.com/kontr24/Auto-service_software/e7d89945bdf6dc36a33be3443b79d72d427f244b/ScreenshotsApplication/CarBrandsForm.png"><img src="https://github.com/kontr24/Auto-service_software/blob/684263009d9e08b46aba0d2653594b2da7ab2dca/ScreenshotsApplication/MastersForm.png"></img></a>
+  <a href="https://raw.githubusercontent.com/kontr24/Auto-service_software/684263009d9e08b46aba0d2653594b2da7ab2dca/ScreenshotsApplication/MastersForm.png"><img src="https://github.com/kontr24/Auto-service_software/blob/684263009d9e08b46aba0d2653594b2da7ab2dca/ScreenshotsApplication/MastersForm.png"></img></a>
 </p>
 
